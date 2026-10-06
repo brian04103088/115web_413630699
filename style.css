@@ -1,0 +1,87 @@
+/* 讓寬度與間距計算更直覺 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Microsoft JhengHei", sans-serif;
+}
+
+/* 3. 設定頁首、頁尾的背景色 (改成森林深綠色) */
+header, footer {
+  background-color: #2e7d32; 
+  padding: 24px;
+  text-align: center;
+}
+
+/* 3. 設定主要內容的背景色 (改成淺薄荷綠) */
+main {
+  background-color: #e8f5e9; 
+  padding: 24px;
+}
+
+/* 區塊加上白色背景卡片效果，在淺綠色背景上會很凸顯 */
+section, main > div {
+  background-color: white;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* 4. 設定標題、段落與連結的樣式 */
+h1 {
+  color: white; 
+  margin-top: 0;
+}
+h2 {
+  color: #2e7d32; /* 內容標題使用深綠色呼應頁首 */
+}
+p, li, td {
+  color: #243447;
+  line-height: 1.8;
+  font-size: 16px;
+}
+a {
+  color: #388e3c; /* 連結變成草綠色 */
+  text-decoration: none; 
+}
+a:hover {
+  text-decoration: underline; 
+}
+header nav a {
+  color: white; /* 導覽列的連結維持白色 */
+}
+
+/* 5. 設定圖片寬度與圓角 */
+img {
+  max-width: 100%;     
+  border-radius: 12px; 
+  display: block;
+  margin: 0 auto;      
+}
+
+/* 5. 設定表格框線 */
+table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin-top: 16px;
+}
+th, td {
+  border: 1px solid #c8e6c9; /* 表格邊框改淺綠 */
+  padding: 12px;
+  text-align: center;
+}
+th {
+  background-color: #c8e6c9; /* 表頭加上淺綠色背景 */
+  color: #1b5e20;            /* 表頭文字加深綠色 */
+}
+
+/* 6. 使用 Flexbox 排列導覽列 */
+nav {
+  display: flex;
+  justify-content: center; 
+  gap: 24px;               
+  margin-top: 16px;
+}
